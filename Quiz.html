@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>NerdPedia - Quiz</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='quiz.css'>
+    <link rel="icon" type="image/x-icon" href="assests/logo-desenho_1.png">
+    <script defer async src='quiz.js'></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+
+        <ul>
+          <li>
+            <a href="index.html">
+              <div class="titulo"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#1">Canais</a>
+            <ul>
+              <li><a href="CoisaDeNerd.html">Coisa de Nerd</a></li>
+              <li><a href="CadeAChave.html">Cadê a chave</a></li>
+            </ul>
+          </li>
+        
+          
+          <li>
+            <a href="#2">Biografias</a>
+            <ul>
+              <li><a href="Leon.html">Leon Martins</a></li>
+              <li><a href="Nilce.html">Nilce Moretto</a></li>
+            </ul>
+          </li>
+        
+        
+          <li><a href="Quiz.html">Quiz</a></li>
+        
+        </ul>
+      
+        
+      </nav>
+    </header>
+    <main>
+      <div class="quiz">
+        <div class="informacoes">
+          <h1 class="mostrarQuestao"></h1>
+          <h1 class="mostrarErros"></h1>
+          <h1 class="mostrarAcertos"></h1>
+        </div>
+        <h1 class="pergunta"></h1>
+        <div class="alternativas"></div>
+      </div>
+      
+    </main>
+    <div class="divbotao">
+      <button id="botao" onclick="desaparecer()">Começar</button>
+    </div>
+    <div id="mensagem"></div>
+  </body>
+</html>

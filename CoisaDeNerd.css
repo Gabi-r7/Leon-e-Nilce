@@ -1,0 +1,112 @@
+html{
+    height: 5000px;
+    background-color: lightskyblue;
+}
+
+body {
+  margin: 0%;
+  overflow-x: hidden;
+  
+}
+
+nav {
+    background: lightseagreen;
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    margin: -8px;
+    
+}
+
+nav :is(ul, li) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+nav ul li {
+    padding: .5em;
+    transition: .3s;
+    vertical-align: middle;
+}
+
+nav ul li:hover:not(.titulo) {
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: orange;
+}
+  
+  nav > ul > li {
+    position: relative;
+  }
+  
+  nav ul li:has(ul)::after {
+    content: ">";
+    color: white;
+  }
+  
+  nav > ul > li > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(6, 2, 54, 0.753);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+  }
+  
+  nav > ul > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  nav > ul > li > ul > li {
+    display: block;
+  }
+
+  nav > .imagem-logo {
+    height: 7rem;
+    border-radius: 15px;
+    margin: 1rem;
+  }
+
+.titulo { 
+  height: 75px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  width: 250px; /* Largura da div */
+  height: 75px; /* Altura da div */
+  background-image: url('assests/logo\ preta.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+.gradiente {
+  background: linear-gradient( #fffbfb00, lightskyblue, lightskyblue, rgba(255, 0, 0, 0));
+  height: 30rem;
+  width: 100%;
+  margin-top: -15rem;
+  z-index: 1;
+  position: absolute;
+}
+
