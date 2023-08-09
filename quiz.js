@@ -1,7 +1,6 @@
 const elQuiz = document.querySelector(".quiz")
 const elPergunta = elQuiz.querySelector(".pergunta")
 const elAlternativas = elQuiz.querySelector(".alternativas")
-let QuestaoAtual = document.querySelector(".questaoAtual")
 let mostrarQuestao = document.querySelector(".mostrarQuestao")
 let mostrarErros = document.querySelector(".mostrarErros")
 let mostrarAcertos = document.querySelector(".mostrarAcertos")
@@ -38,9 +37,9 @@ async function main() {
 
   function carregarPergunta(nPergunta) {
     if(nPergunta >= quiz.length) {
-      --contQuestao
       elPergunta.innerHTML = 'Parabéns, você gastou seu tempo!'
       elAlternativas.innerHTML = ''
+      mostrarQuestao.classList.add('escondido')
       return
     }
     elPergunta.innerHTML = quiz[nPergunta].pergunta
@@ -89,14 +88,7 @@ function atualizarPergunta() {
   ++contQuestao
 }
 
-function desaparecer() {
-  var botao = document.getElementById('botao')
-  
-  botao.style.display = 'none'
-  main()
-  mostrarErros.textContent = "Erros: " + contErros
-  mostrarAcertos.textContent = "Acertos: " + contAcertos
-  mostrarAcertos.classList.add('padding')
-  mostrarQuestao.classList.add('padding')
-  mostrarErros.classList.add('padding')
-}
+
+mostrarErros.textContent = "Erros: " + contErros
+mostrarAcertos.textContent = "Acertos: " + contAcertos
+main()

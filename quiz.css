@@ -132,12 +132,6 @@ main {
   background-repeat: no-repeat; 
 }
 
-.divbotao {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-}
-
 .pergunta {
   background-color: #f8f8f8;
   border-radius: 10px;
@@ -220,18 +214,17 @@ button:hover {
 .mostrarAcertos  {
   background-color: rgb(103, 247, 103);
   border-radius: 10px;
+  padding: 10px;
 }
 
 .mostrarErros  {
   background-color: rgb(240, 41, 41);
   border-radius: 10px;
+  padding: 10px;
 }
 
 .mostrarQuestao {
   background-color: #f1e648;
   border-radius: 10px;
-}
-
-.padding {
   padding: 10px;
 }
