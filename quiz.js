@@ -88,7 +88,6 @@ function atualizarPergunta() {
   ++contQuestao
 }
 
-
 mostrarErros.textContent = "Erros: " + contErros
 mostrarAcertos.textContent = "Acertos: " + contAcertos
 main()
