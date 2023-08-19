@@ -134,34 +134,54 @@ nav > ul > li > ul > li {
   position: absolute;
 }
 
-main>h1 {
+
+
+#h1pessoas {
+  padding: 2vh;
+  margin: auto;
   margin-top: 13rem;
   text-align: center;
 }
 
+main>h1{
+  padding: 2vh;
+  margin: auto;
+  text-align: center;
+}
+
 h1, h2 {
-  margin-left: 19%;
-  margin-top: -35px;
+  text-align: center;
   border-radius: 10px;
-  background-color: #f2fc64;
-  max-width: 270px;
+  background-color: #f3f030;
   padding: 3px;
-  color: rgb(223, 145, 0);
+  color: rgb(202, 118, 7);
+  width: fit-content;
 }
 
-.gridzinha1 {
-  margin: 5rem;
-  margin-top: 3rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  background-color: rgba(255, 255, 255, 0.795);
+h2{
+  margin: auto;
+  padding: 2vh;
+  margin-bottom: 6vh;
+}
+
+.pessoas, .canais {
+  border: rgb(54, 89, 187) solid 5px;
+  place-items: center;
+  background-color: whitesmoke;
+  margin: 6vw;
   border-radius: 15px;
-  padding: 2rem;
+  padding: 3vw;
 }
 
-.divs-fotos {
-  margin: 2rem;
+#leon, #nilce, #cadeachave, #coisadenerd, #republicacoisadenerd{
+  justify-content: center;
+  display: flex;
+  padding: 2vw;
+}
+
+.divs-fotos{
+  max-width: max-content;
+  margin: 1.5vw;
 }
 
 .foto-leon {
@@ -180,19 +200,6 @@ h1, h2 {
   border-radius: 15px;
   background-size: cover;
   background-position: center;
-}
-
-
-.gridzinha2 {
-  margin: 5rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-
-.gridzinha2 > div {
-  margin: 5rem;
-  margin-top: 3rem;
 }
 
 .foto-cadeachave {
@@ -220,9 +227,4 @@ h1, h2 {
   border-radius: 15px;
   background-size: cover;
   background-position: center;
-}
-
-.divs-fotos {
-  display: flex;
-  justify-content: center;
 }
