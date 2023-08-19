@@ -7,24 +7,20 @@ let mostrarAcertos = document.querySelector(".mostrarAcertos")
 let contErros = 0
 let contAcertos = 0
 let contQuestao = 1
+const modal = document.querySelector('.modal')
+const content = modal.querySelector('.content')
+const janela = modal.querySelector('.window')
 
-function mudarCor(corNova, mensagem) {
-  var body = document.body
-  var main = document.querySelector('main')
-  var corOriginal = main.style.backgroundColor
-  body.style.backgroundColor = corNova
 
-  var tempoDeAtraso = 1000
-  var divMensagem = document.getElementById('mensagem')
-  divMensagem.textContent = mensagem
-  divMensagem.style.display = 'block'
+function erro(corNova, mensagem) {
+  modal.classList.add("opened")
+  janela.style.backgroundColor = corNova
+  content.innerHTML = mensagem
+    
 
-  main.classList.add('escondido')
-
+  var tempoDeAtraso = 1300
   setTimeout(function() {
-    main.classList.remove('escondido')
-    divMensagem.style.display = 'none'
-    body.style.backgroundColor = corOriginal
+    modal.classList.remove("opened")
   }, tempoDeAtraso)
 }
 
@@ -59,13 +55,13 @@ async function main() {
     const numeroDaAlternativaClicada = arrayAlternativas.indexOf(botaoClicado)
 
     if (numeroDaAlternativaClicada == quiz[numeroDaPergunta].resposta) {
-      mudarCor('green', 'Acertou!')
+      erro('green', 'Acertou!')
       atualizarAcertos()
       carregarPergunta(++numeroDaPergunta)
       atualizarPergunta()
       return
     }
-    mudarCor('red', 'Errou!')
+    erro('red', 'Errou!')
     atualizarErros()
   })
 

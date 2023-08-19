@@ -216,3 +216,46 @@ button:hover {
   border-radius: 10px;
   padding: 10px;
 }
+
+/* Modal  */
+
+.modal {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0 0 0 / .5);
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.content{
+  font-size: xx-large;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  padding: 1.5rem;
+  color: black;
+}
+
+.window{
+  justify-content: center;
+  display: flex;
+  place-items: center;
+}
+
+.modal.opened {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal .window {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 50vw;
+  min-height: 50vh;
+  border-radius: 1vw;
+  padding: 1rem;
+}
