@@ -164,13 +164,32 @@ h2{
 }
 
 .pessoas, .canais {
-  border: rgb(54, 89, 187) solid 5px;
   place-items: center;
   background-color: rgb(43, 40, 40);
   margin: 6vw;
   border-radius: 15px;
   padding: 3vw;
+  animation: bordaAnimada 5s linear infinite;
 }
+
+@keyframes bordaAnimada {
+  0% {
+    border: 5px solid blue;
+  }
+  25% {
+    border: 5px solid purple;
+  }
+  50% {
+    border: 5px solid green;
+  }
+  75% {
+    border: 5px solid red;
+  }
+  100% {
+    border: 5px solid blue;
+  }
+}
+
 
 #leon, #nilce, #cadeachave, #coisadenerd, #republicacoisadenerd{
   justify-content: center;
@@ -234,4 +253,24 @@ p{
   border-radius: 15px;
   background-size: cover;
   background-position: center;
+}
+
+#meuBtn {
+  display: none; 
+  position: fixed;
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99; 
+  border: none;
+  outline: none;
+  background-color: lightseagreen;
+  color: black;
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#meuBtn:hover {
+  background-color: #555;
 }
