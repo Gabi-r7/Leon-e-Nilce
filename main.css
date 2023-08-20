@@ -123,14 +123,14 @@ nav > ul > li > ul > li {
 .banner {
   width: 100%;
   height: auto;
-  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .gradiente {
-  background: linear-gradient( #fbffff00, rgb(0, 157, 255), rgb(4, 93, 148), rgba(255, 0, 0, 0));
-  height: 30rem;
+  background: linear-gradient( #fbffff00, rgb(47, 48, 53), rgb(41, 44, 44), rgba(255, 0, 0, 0));
+  height: 27rem;
   width: 100%;
-  margin-top: -17rem;
+  margin-top: -18rem;
   z-index: 1;
   position: absolute;
 }
@@ -162,31 +162,31 @@ h2{
   padding: 2vh;
   margin-bottom: 6vh;
 }
-
 .pessoas, .canais {
   place-items: center;
   background-color: rgb(43, 40, 40);
   margin: 6vw;
   border-radius: 15px;
   padding: 3vw;
-  animation: bordaAnimada 5s linear infinite;
+  animation: bordaAnimada 6s linear infinite;
+  position: relative;
 }
 
 @keyframes bordaAnimada {
   0% {
-    border: 5px solid blue;
+    box-shadow: 0 0 40px blue;
   }
   25% {
-    border: 5px solid purple;
+    box-shadow: 0 0 40px purple;
   }
   50% {
-    border: 5px solid green;
+    box-shadow: 0 0 40px green;
   }
   75% {
-    border: 5px solid red;
+    box-shadow: 0 0 40px red;
   }
   100% {
-    border: 5px solid blue;
+    box-shadow: 0 0 40px blue;
   }
 }
 
@@ -275,5 +275,5 @@ p{
 }
 
 .meuBtn:hover {
-  background-color: #555;
+  background-color: rgb(0, 255, 242);
 }
