@@ -255,7 +255,7 @@ p{
   background-position: center;
 }
 
-#meuBtn {
+.meuBtn {
   display: none; 
   position: fixed;
   bottom: 20px;
@@ -267,10 +267,13 @@ p{
   color: black;
   cursor: pointer; 
   padding: 15px; 
-  border-radius: 10px;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
   font-size: 18px;
+  transition: .3s;
 }
 
-#meuBtn:hover {
+.meuBtn:hover {
   background-color: #555;
 }

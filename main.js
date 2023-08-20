@@ -1,4 +1,4 @@
-var    meuBtn = document.querySelector('    meuBtn');
+let meuBtn = document.querySelector('.meuBtn');
 
 window.onscroll = function() {scrollFunction()};
 
@@ -10,7 +10,11 @@ function scrollFunction() {
   }
 }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0; 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // Isso faz a animação suave
+  });
 }
+
+meuBtn.addEventListener("click", scrollToTop);
