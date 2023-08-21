@@ -26,7 +26,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  border-bottom: rgb(21, 22, 22) 5px solid;
 }
 
 nav :is(ul, li) {
@@ -86,6 +85,9 @@ nav > ul > li > ul > li {
 
 /* Media query para telas menores */
 @media (max-width: 768px) {
+  *{
+    font-size: 14px;
+  }
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -110,32 +112,32 @@ nav > ul > li > ul > li {
     visibility: visible;
     background-color: rgba(6, 2, 54, 0.753);
   }
+  #leon, #nilce, #cadeachave, #coisadenerd, #republicacoisadenerd{
+    flex-direction: column;
+    place-items: center;
+    margin-bottom: 10%;
+  }
+
+  h2{
+    margin-bottom: 5%;
+  }
 }
 
-.titulo { 
-  height: 4rem;
-  width: 14rem;
-  background-size: cover;
-  background-position: center;
+.titulo {
+  height: 13vh;
+  width: 25vw;
   background-image: url('assests/logo\ colorida.png');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-size: contain; /* Alterado para "contain" */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner {
   width: 100%;
   height: auto;
   margin-top: .5rem;
-}
-
-.gradiente {
-  background: linear-gradient( #fbffff00, rgb(47, 48, 53), rgb(41, 44, 44), rgba(255, 0, 0, 0));
-  height: 60%;
-  width: 100%;
-  margin-top: -19%;
-  z-index: 1;
-  position: absolute;
+  border-bottom: rgb(21, 22, 22) 5px solid;
+  border-top: rgb(21, 22, 22) 5px solid;
 }
 
 /*  MAIN   */
@@ -143,7 +145,7 @@ nav > ul > li > ul > li {
 #h1pessoas {
   padding: 2vh;
   margin: auto;
-  margin-top: 13rem;
+  margin-top: 7%;
   text-align: center;
 }
 
@@ -244,7 +246,7 @@ h2{
 
 
 #leon, #nilce, #cadeachave, #coisadenerd, #republicacoisadenerd{
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   padding: 2vw;
 }
