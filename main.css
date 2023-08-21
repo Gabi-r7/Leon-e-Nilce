@@ -89,7 +89,7 @@ nav > ul > li > ul > li {
   nav {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
   }
 
   nav ul li {
@@ -131,9 +131,9 @@ nav > ul > li > ul > li {
 
 .gradiente {
   background: linear-gradient( #fbffff00, rgb(47, 48, 53), rgb(41, 44, 44), rgba(255, 0, 0, 0));
-  height: 27rem;
+  height: 60%;
   width: 100%;
-  margin-top: -18rem;
+  margin-top: -19%;
   z-index: 1;
   position: absolute;
 }
@@ -152,14 +152,40 @@ main>h1{
   margin: auto;
   text-align: center;
 }
-
+/*
 h1, h2 {
   text-align: center;
   border-radius: 10px;
-  background-color: lightseagreen;
   padding: 3px;
-  color: rgb(8, 45, 145);
+  color: white;
   width: fit-content;
+  animation: fundoAnimado 6s linear infinite;
+  filter: blur(1.5rem);
+}
+*/
+h1, h2 {
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  font-size: 24px;
+  color: white; /* Cor do texto */
+  text-align: center;
+  padding: 20px;
+  width: fit-content;
+  padding: 2rem;
+}
+
+h1::before, h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px); /* Ajuste o valor para controlar o nível de desfoque */
+  z-index: -1;
+  animation: fundoAnimado 6s linear infinite;
 }
 
 h2{
@@ -176,6 +202,7 @@ h2{
   padding: 3vw;
   animation: bordaAnimada 6s linear infinite;
   position: relative;
+  z-index: -1;
 }
 
 @keyframes bordaAnimada {
@@ -195,6 +222,26 @@ h2{
     box-shadow: 0 0 40px blue;
   }
 }
+
+
+@keyframes fundoAnimado {
+  0% {
+    background-color:  blue;
+  }
+  25% {
+    background-color: purple;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
 
 #leon, #nilce, #cadeachave, #coisadenerd, #republicacoisadenerd{
   justify-content: center;
