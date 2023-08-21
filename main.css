@@ -266,49 +266,32 @@ p{
   margin: 1.5vw;
 }
 
-.foto-leon {
-  background-image: url('assests/Leon.jpg');
+.foto-leon, .foto-nilce, .foto-cadeachave, .foto-coisadenerd, .foto-republicacoisadenerd{
   height: 200px;
   width: 200px;
   border-radius: 15px;
   background-size: cover;
   background-position: center;
+}
+
+.foto-leon{
+  background-image: url('assests/Leon.jpg');
 }
 
 .foto-nilce {
   background-image: url('assests/Nilce.png');
-  height: 200px;
-  width: 200px;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
 }
 
 .foto-cadeachave {
   background-image: url('assests/cadeachave.jpg');
-  height: 200px;
-  width: 200px;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
 }
 
 .foto-coisadenerd {
   background-image: url('assests/coisadenerd.jpg');
-  height: 200px;
-  width: 200px;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
 }
 
 .foto-republicacoisadenerd {
   background-image: url('assests/republicacoisadenerd.jpg');
-  height: 200px;
-  width: 200px;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
 }
 
 /* Botão de volta ao topo */
@@ -344,48 +327,26 @@ p{
   justify-content: space-between;
 }
 
-.foto1{
-  background-image: url('assests/Leon_nilce.jpg');
+.foto1, .foto2, .foto3, .foto4, .foto5{
   height: 15vw;
   width: 20vw;
   border-radius: 15px;
   background-size: cover;
   background-position: center;
   margin: 3%;
+}
+.foto1{
+  background-image: url('assests/Leon_nilce.jpg');
 }
 .foto2{
   background-image: url('assests/fotu.jpg');
-  height: 15vw;
-  width: 20vw;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
-  margin: 3%;
 }
 .foto3{
   background-image: url('assests/leonenilce.jpg');
-  height: 15vw;
-  width: 20vw;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
-  margin: 3%;
 }
 .foto4{
   background-image: url('assests/img0119.webp');
-  height: 15vw;
-  width: 20vw;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
-  margin: 3%;
 }
 .foto5{
   background-image: url('assests/leon-martins-e-nilce-moretto.jpg');
-  height: 15vw;
-  width: 20vw;
-  border-radius: 15px;
-  background-size: cover;
-  background-position: center;
-  margin: 3%;
 }
