@@ -104,7 +104,7 @@ nav > ul > li > ul > li {
   }
 
   nav ul li:has(ul)::after {
-    content: "";
+    content: ">";
   }
 
   nav > ul > li:hover > ul {
@@ -124,7 +124,7 @@ nav > ul > li > ul > li {
 }
 
 .titulo {
-  height: 13vh;
+  height: 10vw;
   width: 25vw;
   background-image: url('assests/logo\ colorida.png');
   background-size: contain; /* Alterado para "contain" */
