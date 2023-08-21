@@ -130,6 +130,11 @@ nav > ul > li > ul > li {
   background-size: contain; /* Alterado para "contain" */
   background-position: center;
   background-repeat: no-repeat;
+  transition: .3s;
+}
+
+.titulo:hover{
+  filter: grayscale(1) brightness(5);
 }
 
 .banner {
