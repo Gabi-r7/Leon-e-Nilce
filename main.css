@@ -196,7 +196,7 @@ h2{
   margin-bottom: 6vh;
 }
 
-.pessoas, .canais {
+.pessoas, .canais, .imagens {
   place-items: center;
   background-color: rgb(43, 40, 40);
   margin: 6vw;
@@ -259,7 +259,7 @@ p{
 
 /* FOTOS */
 
-.divs-fotos{
+.divs-fotos, .gridzita{
   display: flex;
   place-items: center;
   max-width: max-content;
@@ -335,4 +335,57 @@ p{
 .meuBtn:hover {
   background-color: rgb(0, 255, 242);
   color: black;
+}
+
+/* GALERIA */
+
+.gridzita{
+  display: flex;
+  justify-content: space-between;
+}
+
+.foto1{
+  background-image: url('assests/Leon_nilce.jpg');
+  height: 15vw;
+  width: 20vw;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  margin: 3%;
+}
+.foto2{
+  background-image: url('assests/fotu.jpg');
+  height: 15vw;
+  width: 20vw;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  margin: 3%;
+}
+.foto3{
+  background-image: url('assests/leonenilce.jpg');
+  height: 15vw;
+  width: 20vw;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  margin: 3%;
+}
+.foto4{
+  background-image: url('assests/img0119.webp');
+  height: 15vw;
+  width: 20vw;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  margin: 3%;
+}
+.foto5{
+  background-image: url('assests/leon-martins-e-nilce-moretto.jpg');
+  height: 15vw;
+  width: 20vw;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  margin: 3%;
 }
