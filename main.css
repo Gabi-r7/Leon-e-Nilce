@@ -124,8 +124,8 @@ nav > ul > li > ul > li {
 }
 
 .titulo {
-  height: 10vw;
-  width: 25vw;
+  height: 8vw;
+  width: 24vw;
   background-image: url('assests/logo\ colorida.png');
   background-size: contain; /* Alterado para "contain" */
   background-position: center;
@@ -136,7 +136,6 @@ nav > ul > li > ul > li {
 .titulo:hover{
   filter: grayscale(1) brightness(5);
 }
-
 .banner {
   width: 100%;
   height: auto;
